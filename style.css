@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background:hsl(0, 100%, 74%) url(./images/bg-intro-desktop.png);
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.wrapper{
+    width: 77%;
+    margin: 0 auto;
+}
+.center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.note{
+    width: 42%;
+    color: hsl(0, 0%, 100%);
+}
+.note h1{
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 1;
+    margin-bottom: 40px;
+}
+.note p{
+    font-size: 15px;
+    line-height: 1.5;
+
+}
+.form{
+    width: 50%;
+}
+.offer{
+    background-color: hsl(248, 32%, 49%);
+    color: hsl(0, 0%, 100%);
+    padding:  15px 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px
+}
+.offers{
+    font-weight: 700;
+
+}
+form{
+    background-color: hsl(0, 0%, 100%);
+    padding:  30px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+input{
+    width: 100%;
+    padding: 15px 20px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 14px;
+    border: 1px solid hsl(249, 10%, 26%);
+    
+}
+form input.mistake{
+    border: 2px solid hsl(0, 100%, 74%);
+}
+small{
+    display: flex;
+    justify-content: end;
+    color: hsl(0, 100%, 74%);
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+input::placeholder{
+    color: hsl(249, 10%, 26%);
+    font-size: 14px;
+    font-weight: 700;
+}
+button{
+    background-color:hsl(154, 59%, 51%) ;
+    color: hsl(0, 0%, 100%);
+    outline: none;
+    border: none;
+    padding: 15px 20px;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+button:hover{
+    background-color: hsl(154, 65%, 68%);
+}
+.error-sign{
+    display: flex; 
+    align-items: center; 
+    position: relative;
+    /* visibility: hidden; */
+}
+.failureIcon{
+    position: absolute;
+    opacity: 0;
+    right: 0;
+    top: 12px;
+    margin-right: 10px;
+}
+.term{
+    font-size: 12px;
+    color:hsl(246, 25%, 77%);
+}
+.term a{
+    color: hsl(0, 100%,74%);
+    text-decoration: none;
+    font-weight: 700;
+}
+.required{
+    color: red;
+    border: 2px solid hsl(0, 100%, 74%);
+}
+.fail{
+    opacity: 1;
+}
+.error{
+    color: hsl(0, 100%, 74%);
+    display: flex;
+    justify-content: end;
+    font-size: 12px;
+    margin-top: -12px;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+@media screen and (max-width:768px) {
+    body{
+        display: block;
+    }
+    .wrapper{
+        margin-top: 20px;
+        width: 90%;
+    }
+    .center{
+        display: block;
+    }
+    .note{
+        width: 100%;
+        text-align: center;
+    }
+    .form{
+        width: 100%;
+    }
+    .note h1{
+        font-size: 30px;
+    }
+    .note p{
+        font-size: 14px;
+        margin-bottom: 60px;
+    }
+    .offer{
+        text-align: center;
+        font-size: 20px;
+    }
+    .term{
+        text-align: center;
+    }
+}
